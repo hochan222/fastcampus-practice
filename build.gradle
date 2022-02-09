@@ -1,6 +1,6 @@
 plugins {
+    id 'org.springframework.boot' version '2.6.3'
     id 'java'
-    id 'war'
 }
 
 group 'com.fastcampus'
@@ -11,10 +11,10 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'javax.servlet:javax.servlet-api:4.0.1'
-    implementation 'org.springframework:spring-webmvc:5.3.15'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.6.3'
+    compileOnly 'org.projectlombok:lombok:1.18.22'
 
-    testImplementation 'org.springframework:spring-test:5.3.15'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.6.3'
     testImplementation 'org.assertj:assertj-core:3.22.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
